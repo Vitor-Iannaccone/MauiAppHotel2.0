@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel2._0.Views.Sobre"
+             BackgroundColor="{StaticResource White}">
+    <VerticalStackLayout>
+        <Label 
+            Text="Sobre:"
+            FontFamily="kalam"
+            FontSize="60"
+            TextColor="{StaticResource PrimaryDark}"
+            HorizontalOptions="Center"
+            />
+        <Frame Padding="10"
+               Margin="10"
+               BackgroundColor="{StaticResource Gray100}">
+               
+                <VerticalStackLayout>
+                <Grid RowDefinitions="Auto, Auto, Auto" 
+                      ColumnDefinitions=" *, *">
+
+                    <Label Grid.Row="0" Grid.Column="0"
+                       Text="Desenvolvedor:" 
+                       FontSize="18"
+                       TextColor="{StaticResource Primary}" />
+                    <Label Grid.Row="0" Grid.Column="1"
+                       Text="Vitor Iannaccone" 
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       TextColor="{StaticResource PrimaryDark}" />
+                    <Label Grid.Row="1" Grid.Column="0"
+                       Text="Idade:" 
+                       FontSize="18"
+                       TextColor="{StaticResource Primary}" />
+                    <Label Grid.Row="1" Grid.Column="1"
+                       Text="19 Anos" 
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       TextColor="{StaticResource PrimaryDark}" />
+                    <Label Grid.Row="2" Grid.Column="0"
+                       Text="Curso:" 
+                       FontSize="18"
+                       TextColor="{StaticResource Primary}" />
+                    <Label Grid.Row="3" Grid.Column="1"
+                       Text="Desenvolvimento de Sistemas" 
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       TextColor="{StaticResource PrimaryDark}" />
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+        
+        <Frame Padding="10"
+               Margin="10"
+               BackgroundColor="{StaticResource Gray100}">
+            
+            <VerticalStackLayout>
+                <Grid RowDefinitions="Auto, Auto"
+                      ColumnDefinitions="*, *">
+                    
+                    <Label Grid.Row="0" Grid.Column="0"
+                           Text="App Desenvolvido:"
+                           FontSize="18"
+                           TextColor="{StaticResource Primary}"/>
+
+                    <Label Grid.Row="0" Grid.Column="1"
+                           Text="MauiAppHotel2.0"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           TextColor="{StaticResource PrimaryDark}"/>
+
+                    <Label Grid.Row="1" Grid.Column="0"
+                           Text="Ano:"
+                           FontSize="18"
+                           TextColor="{StaticResource Primary}"/>
+
+                    <Label Grid.Row="1" Grid.Column="1"
+                           Text="2025"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           TextColor="{StaticResource PrimaryDark}"/>
+
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Avançar"
+                Background="{StaticResource PrimaryDark}"
+                TextColor="{StaticResource Primary}"
+                Clicked="Button_Clicked"
+                FontSize="20"/>
+
+    </VerticalStackLayout>
+            
+ 
+</ContentPage>
