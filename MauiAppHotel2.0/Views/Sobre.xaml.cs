@@ -9,6 +9,13 @@ public partial class Sobre : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ContratacaoHospedagem());
+        try
+        {
+            Navigation.PushAsync(new ContratacaoHospedagem());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 }
